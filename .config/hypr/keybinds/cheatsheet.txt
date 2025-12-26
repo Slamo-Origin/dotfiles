@@ -1,0 +1,58 @@
+╔══════════════════════════════════════════════════════════╗
+║          HYPRLAND KEYBINDS CHEATSHEET                   ║
+║          Catppuccin Mocha Rice - slam0                  ║
+╚══════════════════════════════════════════════════════════╝
+
+━━━ 🚀 APPLICATIONS ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  SUPER + Enter          Launch Kitty terminal
+  SUPER + D              Rofi app launcher
+  SUPER + E              Nautilus file manager
+  SUPER + W              Change wallpaper
+
+━━━ 🪟 WINDOW MANAGEMENT ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  SUPER + Q              Close active window
+  SUPER + V              Toggle floating
+  SUPER + F              Toggle fullscreen
+  SUPER + P              Pseudo-tiling
+  SUPER + T              Toggle split direction
+  SUPER + C              Center floating window
+
+━━━ 🧭 NAVIGATION ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  SUPER + ←↑↓→           Move focus between windows
+  SUPER + SHIFT + ←↑↓→   Move window position
+  SUPER + CTRL + ←↑↓→    Resize active window
+
+━━━ 🖥️  WORKSPACES ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  SUPER + 1-9            Switch to workspace
+  SUPER + SHIFT + 1-9    Move window to workspace
+  SUPER + Tab            Next workspace
+  SUPER + SHIFT + Tab    Previous workspace
+  SUPER + Mouse wheel    Scroll through workspaces
+
+━━━ 📸 SCREENSHOTS ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Print                  Fullscreen screenshot
+  SHIFT + Print          Select area screenshot
+  CTRL + Print           Active window screenshot
+
+━━━ 🔊 MEDIA & VOLUME ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  F1/Volume Down         Decrease volume 5%
+  F2/Volume Up           Increase volume 5%
+  F3/Mute                Toggle mute
+  Play/Pause             Play/pause media
+  Next/Previous          Skip tracks
+
+━━━ ☀️ BRIGHTNESS ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Brightness Down        Decrease brightness 5%
+  Brightness Up          Increase brightness 5%
+
+━━━ 🔒 SYSTEM ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  SUPER + SHIFT + Q      Exit Hyprland
+  SUPER + SHIFT + R      Reload Hyprland config
+  SUPER + SHIFT + L      Lock screen
+  SUPER + /              Show this cheatsheet
+
+━━━ 🖱️ MOUSE ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  SUPER + Left Click     Drag window
+  SUPER + Right Click    Resize window
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

@@ -1,0 +1,28 @@
+bind = $mainMod, return, exec, kitty
+bind = $mainMod, Q, killactive
+bind = $mainMod SHIFT, Q, exit
+bind = $mainMod SHIFT, R, exec, hyprctl reload
+bind = $mainMod, E, exec, nautilus
+bind = $mainMod, W, exec, ~/.config/hypr/scripts/wallpapers/mocha.sh
+bind = $mainMod, slash, exec, ~/.config/hypr/scripts/binds/show-keybinds.sh
+bind = , L, exec, swaylock -f -c 1e1e2e
+
+# Media controls
+bind = , XF86AudioRaiseVolume, exec, pamixer -i 5 && notify-send "Volume: $(pamixer --get-volume)%"
+bind = , XF86AudioLowerVolume, exec, pamixer -d 5 && notify-send "Volume: $(pamixer --get-volume)%"
+bind = , XF86AudioMute, exec, pamixer -t && notify-send "Mute toggled"
+bind = , XF86MonBrightnessUp, exec, brightnessctl set +5% && notify-send "Brightness: $(brightnessctl g)"
+bind = , XF86MonBrightnessDown, exec, brightnessctl set 5%- && notify-send "Brightness: $(brightnessctl g)"
+
+# Rofi launcher
+bind = $mainMod, D, exec, rofi -show drun
+
+# Screen lock
+bind = $mainMod SHIFT, L, exec, swaylock -f -c 1e1e2e --indicator-radius 100 --indicator-thickness 7 --ring-color cba6f7 --key-hl-color f5c2e7
+
+# Media controls
+bind = , XF86AudioRaiseVolume, exec, pamixer -i 5 && notify-send "Volume" "$(pamixer --get-volume)%" -t 1000
+bind = , XF86AudioLowerVolume, exec, pamixer -d 5 && notify-send "Volume" "$(pamixer --get-volume)%" -t 1000
+bind = , XF86AudioMute, exec, pamixer -t && notify-send "Volume" "Muted" -t 1000
+bind = , XF86MonBrightnessUp, exec, brightnessctl set +5%
+bind = , XF86MonBrightnessDown, exec, brightnessctl set 5%-

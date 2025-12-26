@@ -1,2 +1,3 @@
-# dotfiles
-My Arch Linux rice configuration files - window manager, terminal, and shell configs
+# My Arch Linux Dotfiles
+
+Hyprland rice with AGS widgets

@@ -1,0 +1,68 @@
+# Main modifier key
+$mainMod = SUPER
+
+# Core window management
+bind = $mainMod, return, exec, kitty
+bind = $mainMod, Q, killactive
+bind = $mainMod SHIFT, Q, exit
+bind = $mainMod SHIFT, R, exec, hyprctl reload
+
+# Applications
+bind = $mainMod, E, exec, nautilus
+bind = $mainMod, D, exec, rofi -show drun
+
+# Wallpaper & Utils
+bind = $mainMod, W, exec, ~/.config/hypr/scripts/wallpapers/mocha.sh
+bind = $mainMod, slash, exec, ~/.config/hypr/scripts/binds/show-keybinds.sh
+
+# Screenshots
+bind = $mainMod, S, exec, ~/.config/hypr/scripts/binds/screenshot.sh area
+bind = $mainMod SHIFT, S, exec, ~/.config/hypr/scripts/binds/screenshot.sh
+
+# Screen lock (SHIFT+L to avoid conflicts)
+bind = $mainMod SHIFT, L, exec, swaylock -f -c 1e1e2e --indicator-radius 100 --indicator-thickness 7 --ring-color cba6f7 --key-hl-color f5c2e7
+
+# Media controls (function keys)
+bind = , XF86AudioRaiseVolume, exec, pamixer -i 5 && notify-send "Volume" "$(pamixer --get-volume)%" -t 1000
+bind = , XF86AudioLowerVolume, exec, pamixer -d 5 && notify-send "Volume" "$(pamixer --get-volume)%" -t 1000
+bind = , XF86AudioMute, exec, pamixer -t && notify-send "Volume" "Muted" -t 1000
+bind = , XF86AudioPlay, exec, playerctl play-pause
+bind = , XF86AudioNext, exec, playerctl next
+bind = , XF86AudioPrev, exec, playerctl previous
+
+# Brightness controls
+bind = , XF86MonBrightnessUp, exec, brightnessctl set +5% && notify-send "Brightness" "$(brightnessctl g)" -t 1000
+bind = , XF86MonBrightnessDown, exec, brightnessctl set 5%- && notify-send "Brightness" "$(brightnessctl g)" -t 1000
+
+# Window movement
+bind = $mainMod, left, movefocus, l
+bind = $mainMod, right, movefocus, r
+bind = $mainMod, up, movefocus, u
+bind = $mainMod, down, movefocus, d
+
+# Workspace switching
+bind = $mainMod, 1, workspace, 1
+bind = $mainMod, 2, workspace, 2
+bind = $mainMod, 3, workspace, 3
+bind = $mainMod, 4, workspace, 4
+bind = $mainMod, 5, workspace, 5
+
+# Move window to workspace
+bind = $mainMod SHIFT, 1, movetoworkspace, 1
+bind = $mainMod SHIFT, 2, movetoworkspace, 2
+bind = $mainMod SHIFT, 3, movetoworkspace, 3
+bind = $mainMod SHIFT, 4, movetoworkspace, 4
+bind = $mainMod SHIFT, 5, movetoworkspace, 5
+
+# Fullscreen & floating
+bind = $mainMod, F, fullscreen, 0
+bind = $mainMod, V, togglefloating
+
+# Mouse bindings
+bindm = $mainMod, mouse:272, movewindow
+bindm = $mainMod, mouse:273, resizewindow
+
+# Screenshot keybinds (better)
+bind = $mainMod, Print, exec, ~/.config/hypr/scripts/binds/screenshot.sh full
+bind = $mainMod SHIFT, Print, exec, ~/.config/hypr/scripts/binds/screenshot.sh area
+bind = $mainMod CTRL, Print, exec, ~/.config/hypr/scripts/binds/screenshot.sh window
